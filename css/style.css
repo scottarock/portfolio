@@ -10,3 +10,11 @@
   max-height: 64px;
   padding: 3px 0px;
 }
+
+.introduction {
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.smaller {
+  font-size: 1.2rem;
+}
