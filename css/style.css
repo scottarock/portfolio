@@ -14,3 +14,32 @@
 .smaller {
   font-size: 1.2rem;
 }
+
+#orange-cube {
+  background-image: url('../images/orange-cube.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-card {
+  position: relative;
+  height: 500px;
+}
+
+.about-content {
+  position: absolute;
+  bottom: 160px;
+  width: 90%;
+  text-align: center;
+  line-height: 1;
+}
+
+.intro {
+  font-size: 2.5rem;
+}
+
+.intro-name {
+  font-size: 4rem;
+  font-weight: bolder;
+}
