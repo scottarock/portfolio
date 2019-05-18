@@ -36,6 +36,8 @@ $(document).ready(function() {
         M.Carousel.getInstance($('.carousel')).next();
       });
 
+      M.Carousel.getInstance($('.carousel')).set(0);
+
     }
   });
 

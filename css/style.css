@@ -68,5 +68,9 @@
 
 #nextfit {
   width: 75%;
-  max-height: 90%;
+  max-height: 95%;
+}
+
+.spaced {
+  margin-bottom: 1rem;
 }
