@@ -43,3 +43,30 @@
   font-size: 4rem;
   font-weight: bolder;
 }
+
+.align-arrow {
+  position: absolute;
+  top: 50%;
+}
+
+.arrow-icon {
+  position: relative;
+  top: -20px;
+  font-size: 40px;
+  color: #e4e9eb;
+  background-color: #1e4757;
+  border-radius: 50%;
+}
+
+.arrow-icon.left {
+  left: 3px;
+}
+
+.arrow-con.right {
+  left: -3px;
+}
+
+#nextfit {
+  width: 75%;
+  max-height: 90%;
+}

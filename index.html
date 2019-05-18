@@ -48,6 +48,11 @@
     </div>
 
     <ul class="sidenav slate-blue" id="mobile-menu">
+      <li class="logo">
+        <a href="#" class="brand-logo center">
+          <img class="logo-image" src="images/logo/logo.png" alt="logo">
+        </a>
+      </li>
       <li>
         <a href="#about" class="slate-blue-text text-lighten-4">About</a>
       </li>
@@ -58,9 +63,111 @@
 
     <main class="container">
 
-      <!-- about section, take 2 -->
-      <div class="section">
-        <div id="about" class="row">
+      <!-- modal containing the bike quote system -->
+      <div id="nextfit" class="modal">
+        <div class="modal-content">
+
+          <div>
+            <h3 id="title" class="slate-blue-text center-align"></h3>
+          </div>
+
+          <div class="carousel carousel-slider">
+            <div class="carousel-fixed-item align-arrow">
+              <div class="left">
+                <a id="previous" href="prev">
+                  <i class="dark-orange-text material-icons left arrow-icon">chevron_left</i>
+                </a>
+              </div>
+              <div class="right">
+                <a id="next" class="slate-blue lighten-5 slate-blue-text" href="next">
+                  <i class="dark-orange-text material-icons right arrow-icon">chevron_right</i>
+                </a>
+              </div>
+            </div>
+            <a class="carousel-item" href="#one!">
+              <img
+                src="images/projects/01-customer-contact.jpg"
+                data-title="Customer Contact"
+                data-caption="Allows entry of customer contact data. Zip code look up for city and state. Multiple phone and email contact types available.">
+            </a>
+            <a class="carousel-item" href="#two!">
+              <img
+                src="images/projects/02-measurement-entry.jpg"
+                data-title="Customer Measurements"
+                data-caption="Allows entry of customer body measurements and general fit information. Multiple ways of converting between metric and imperial.">
+            </a>
+            <a class="carousel-item" href="#three!">
+              <img
+                src="images/projects/03-next-fit.jpg"
+                data-title="Next Fit"
+                data-caption="Use customer body measurements to create a starting point fit for use with fit machine. Different styles of bicycle and riding can be chosen to change the starting point. Also has entry for multiple bike fits created on the fit machine.">
+            </a>
+            <a class="carousel-item" href="#four!">
+              <img
+                src="images/projects/04-size-recommendation.jpg"
+                data-title="Size Recommendation"
+                data-caption="Use fitting data provided on previous tabs to map the fit into the size range of bicycles. Also allows for specific sizing information to be entered on a particular size bike so that the fit can be easily replicated.">
+            </a>
+            <a class="carousel-item" href="#five!">
+              <img
+                src="images/projects/05-bike-list.jpg"
+                data-title="Bicycle List"
+                data-caption="List of bicycles that have been quoted, ordered, or produced for a customer. Shows both bicycles that are in process of being built and past bicycles that have been completed.">
+            </a>
+            <a class="carousel-item" href="#six!">
+              <img
+                src="images/projects/06-frame-fork.jpg"
+                data-title="Frame and Fork Chooser"
+                data-caption="Gives all the choices for each particular bicycle model that is produced. Completely data driven content determined by the bicycle model and options tables.">
+            </a>
+            <a class="carousel-item" href="#seven!">
+              <img
+                src="images/projects/07-paint-decal.jpg"
+                data-title="Paint Job Chooser"
+                data-caption="Allows entry of all the details of a paint job on a bicycle. Completely data driven content determined by bicycle model and options tables. Also allows for an image file to be attached to the bike to show the desired paint job.">
+            </a>
+            <a class="carousel-item" href="#eight!">
+              <img
+                src="images/projects/08-parts-group.jpg"
+                data-title="Parts List"
+                data-caption="Shows the parts list for the bicycle. Starts with a stock list which can be modified. Pre-determined upgrades can be picked and removed in one click, even when involving multiple parts on the bicycle. Completely data driven content determined by the bicycle model and options tables.">
+            </a>
+            <a class="carousel-item" href="#nine!">
+              <img
+                src="images/projects/09-accessories.jpg"
+                data-title="Accessories List"
+                data-caption="Shows the list of accessories the customer would like on their bicycle. Pre-determined accessories appropriate to the model can be picked with one click. These accessories are model specific and completely data driven.">
+            </a>
+            <a class="carousel-item" href="#ten!">
+              <img
+                src="images/projects/10-price-quote.jpg"
+                data-title="Price Quote"
+                data-caption="Shows the quote for the bicycle that has been designed with all it's options. Changes to the previous tabs for the bike automatically generated the pricing that is shown. If the bicycle is being shipped to the customer, that information can be entered here. Bicycle can be ordered on this page. Selling the bicycle will cause validation of all the needed information to create the bicycle before allowing it to be ordered.">
+            </a>
+            <a class="carousel-item" href="#eleven!">
+              <img
+                src="images/projects/11-status.jpg"
+                data-title="Status of Invoiced Bicycle"
+                data-caption="An overview of the complete bicycle along with the progress through the process once it has been ordered.">
+            </a>
+            <a class="carousel-item" href="#twelve!">
+              <img
+                src="images/projects/12-drawing.jpg"
+                data-title="Drawing Tab"
+                data-caption="Shows information about the bicycle required to create a CAD drawing for the frame. Access to this tab is restricted. Once the drawing is created, the CAD drawing may be imported and saved with thee rest of the bicycle information.">
+            </a>
+          </div>
+
+          <div>
+            <p id="caption" class="slate-blue-text"></p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- about section -->
+      <div id="about" class="section"></div>
+        <div class="row">
           <div class="col s12">
             <div id="orange-cube" class="card large">
               <div class="card-content about-card slate-blue-text text-lighten-4">
@@ -102,7 +209,7 @@
         <div class="col s12 m6 l4">
           <div class="card large slate-blue z-depth-3">
             <div class="card-content slate-blue-text text-lighten-4">
-              <span class="card-title">Bike Fit and Quoting app</span>
+              <span class="card-title"><a class="modal-trigger dark-orange-text text-lighten-2" href="#nextfit">Bike Fit and Quoting app</a></span>
               <p>Program used by R+E Cycles to record customer data and place custom bicycle orders. It allows for entry of customer contact and fit data. Uses that data to determine a starting point fit. Creates quotes for complete bicycles for the customer and then tracks any orders through the building process from order to delivery.</p>
               <div class="section">
                 <div class="divider dark-orange lighten-2"></div>
