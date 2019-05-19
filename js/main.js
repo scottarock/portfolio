@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   // initialize Materialize objects
   $('.sidenav').sidenav();
-  $('.modal').modal({
+  $('#nextfit').modal({
     startingTop: '4%',
     endingTop: '4%',
     onOpenEnd: function() {
@@ -27,16 +27,16 @@ $(document).ready(function() {
       $('#previous').on('click', function(event) {
         event.preventDefault();
         event.stopPropagation();
-        M.Carousel.getInstance($('.carousel')).prev();
+        M.Carousel.getInstance($('#nextfit-screens')).prev();
       });
 
       $('#next').on('click', function(event) {
         event.preventDefault();
         event.stopPropagation();
-        M.Carousel.getInstance($('.carousel')).next();
+        M.Carousel.getInstance($('#nextfit-screens')).next();
       });
 
-      M.Carousel.getInstance($('.carousel')).set(0);
+      M.Carousel.getInstance($('#nextfit-screens')).set(0);
 
     }
   });
