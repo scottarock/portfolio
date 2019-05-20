@@ -8,7 +8,7 @@ $(document).ready(function() {
     onOpenEnd: function() {
 
       // initialize the carousel inside the modal
-      $('.carousel').carousel({
+      $('#nextfit-screens').carousel({
         fullWidth: true,
         indicators: false,
         noWrap: true,
@@ -18,19 +18,19 @@ $(document).ready(function() {
           var title = image.attributes.getNamedItem('data-title');
           var caption = image.attributes.getNamedItem('data-caption');
 
-          $('#title').html(title ? title.value : '&nbsp;');
-          $('#caption').html(caption ? caption.value : '');
+          $('#nextfit-title').html(title ? title.value : '&nbsp;');
+          $('#nextfit-caption').html(caption ? caption.value : '');
         }
       });
 
       // handle previous and next arrow clicks of carousel
-      $('#previous').on('click', function(event) {
+      $('#nextfit-previous').on('click', function(event) {
         event.preventDefault();
         event.stopPropagation();
         M.Carousel.getInstance($('#nextfit-screens')).prev();
       });
 
-      $('#next').on('click', function(event) {
+      $('#nextfit-next').on('click', function(event) {
         event.preventDefault();
         event.stopPropagation();
         M.Carousel.getInstance($('#nextfit-screens')).next();
@@ -40,6 +40,83 @@ $(document).ready(function() {
 
     }
   });
+  $('#dropout').modal({
+    startingTop: '4%',
+    endingTop: '4%',
+    onOpenEnd: function() {
+
+      // initialize the carousel inside the modal
+      $('#dropout-images').carousel({
+        fullWidth: true,
+        indicators: false,
+        noWrap: true,
+        onCycleTo: function(data) {
+
+          var image = data.getElementsByTagName('img')[0];
+          var title = image.attributes.getNamedItem('data-title');
+          // var caption = image.attributes.getNamedItem('data-caption');
+
+          $('#dropout-title').html(title ? title.value : '&nbsp;');
+          // $('#caption').html(caption ? caption.value : '');
+        }
+      });
+
+      // handle previous and next arrow clicks of carousel
+      $('#dropout-previous').on('click', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        M.Carousel.getInstance($('#dropout-images')).prev();
+      });
+
+      $('#dropout-next').on('click', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        M.Carousel.getInstance($('#dropout-images')).next();
+      });
+
+      M.Carousel.getInstance($('#dropout-images')).set(0);
+
+    }
+  });
+  $('#brakes').modal({
+    startingTop: '4%',
+    endingTop: '4%',
+    onOpenEnd: function() {
+
+      // initialize the carousel inside the modal
+      $('#brake-images').carousel({
+        fullWidth: true,
+        indicators: false,
+        noWrap: true,
+        onCycleTo: function(data) {
+
+          var image = data.getElementsByTagName('img')[0];
+          var title = image.attributes.getNamedItem('data-title');
+          // var caption = image.attributes.getNamedItem('data-caption');
+
+          $('#brakes-title').html(title ? title.value : '&nbsp;');
+          // $('#caption').html(caption ? caption.value : '');
+        }
+      });
+
+      // handle previous and next arrow clicks of carousel
+      $('#brakes-previous').on('click', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        M.Carousel.getInstance($('#brake-images')).prev();
+      });
+
+      $('#brakes-next').on('click', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        M.Carousel.getInstance($('#brake-images')).next();
+      });
+
+      M.Carousel.getInstance($('#brake-images')).set(0);
+
+    }
+  });
+
 
   // set the active link in the navbar
   $('.nav-wrapper ul li').on('click', function(event) {
