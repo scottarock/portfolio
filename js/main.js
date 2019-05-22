@@ -18,8 +18,21 @@ $(document).ready(function() {
           var title = image.attributes.getNamedItem('data-title');
           var caption = image.attributes.getNamedItem('data-caption');
 
+          var slides = data.parentElement.querySelectorAll('.carousel-item');
+
           $('#nextfit-title').html(title ? title.value : '&nbsp;');
           $('#nextfit-caption').html(caption ? caption.value : '');
+
+          if ( data === slides[0] ) {
+            $('#nextfit-next').show();
+            $('#nextfit-previous').hide();
+          } else if ( data === slides[slides.length -1] ) {
+            $('#nextfit-previous').show();
+            $('#nextfit-next').hide();
+          } else {
+            $('#nextfit-previous').show();
+            $('#nextfit-next').show();
+          }
         }
       });
 
@@ -56,8 +69,22 @@ $(document).ready(function() {
           var title = image.attributes.getNamedItem('data-title');
           // var caption = image.attributes.getNamedItem('data-caption');
 
+          var slides = data.parentElement.querySelectorAll('.carousel-item');
+
           $('#dropout-title').html(title ? title.value : '&nbsp;');
           // $('#caption').html(caption ? caption.value : '');
+
+          if ( data === slides[0] ) {
+            $('#dropout-previous').hide();
+            $('#dropout-next').show();
+          } else if ( data === slides[slides.length -1] ) {
+            $('#dropout-previous').show();
+            $('#dropout-next').hide();
+          } else {
+            $('#dropout-previous').show();
+            $('#dropout-next').show();
+          }
+
         }
       });
 
@@ -94,8 +121,21 @@ $(document).ready(function() {
           var title = image.attributes.getNamedItem('data-title');
           // var caption = image.attributes.getNamedItem('data-caption');
 
+          var slides = data.parentElement.querySelectorAll('.carousel-item');
+
           $('#brakes-title').html(title ? title.value : '&nbsp;');
           // $('#caption').html(caption ? caption.value : '');
+
+          if ( data === slides[0] ) {
+            $('#brakes-previous').hide();
+            $('#brakes-next').show();
+          } else if ( data === slides[slides.length -1] ) {
+            $('#brakes-previous').show();
+            $('#brakes-next').hide();
+          } else {
+            $('#brakes-previous').show();
+            $('#brakes-next').show();
+          }
         }
       });
 
