@@ -1,6 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro'); */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 /* @import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada'); */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
 
 *{
   font-family: Montserrat, sans-serif;
@@ -73,4 +74,16 @@
 
 .spaced {
   margin-bottom: 1rem;
+}
+
+.bolder {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.large-icon {
+  font-size: 4rem;
 }
