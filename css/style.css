@@ -92,3 +92,12 @@
 .separator {
   border-bottom: 1px solid #bcc8cd;
 }
+
+.anchor {
+  position: relative;
+}
+
+.anchor a {
+  position: absolute;
+  top: -64px;
+}
