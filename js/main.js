@@ -36,7 +36,13 @@ $(document).ready(function() {
         }
       });
 
-      // handle previous and next arrow clicks of carousel
+      // handle previous, next and close clicks of carousel
+      $('#nextfit-close').on('click', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        M.Modal.getInstance($('#nextfit')).close();
+      });
+
       $('#nextfit-previous').on('click', function(event) {
         event.preventDefault();
         event.stopPropagation();
@@ -88,7 +94,13 @@ $(document).ready(function() {
         }
       });
 
-      // handle previous and next arrow clicks of carousel
+      // handle previous, next and close clicks of carousel
+      $('#dropout-close').on('click', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        M.Modal.getInstance($('#dropout')).close();
+      });
+
       $('#dropout-previous').on('click', function(event) {
         event.preventDefault();
         event.stopPropagation();
@@ -139,7 +151,13 @@ $(document).ready(function() {
         }
       });
 
-      // handle previous and next arrow clicks of carousel
+      // handle previous, next and close clicks of carousel
+      $('#brakes-close').on('click', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        M.Modal.getInstance($('#brakes')).close();
+      });
+
       $('#brakes-previous').on('click', function(event) {
         event.preventDefault();
         event.stopPropagation();
