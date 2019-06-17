@@ -12,10 +12,6 @@
   padding: 3px 0px;
 }
 
-.smaller {
-  font-size: 1.2rem;
-}
-
 #orange-cube {
   background-image: url('../images/orange-cube.jpg');
   background-repeat: no-repeat;
@@ -84,6 +80,10 @@
   margin-bottom: 1rem;
 }
 
+.bigger {
+  font-size: 1.2rem;
+}
+
 .bolder {
   font-weight: 500;
 }
@@ -99,6 +99,10 @@
 
 .separator {
   border-bottom: 1px solid #bcc8cd;
+}
+
+.my-title {
+  margin-top: 0px;
 }
 
 .anchor {
